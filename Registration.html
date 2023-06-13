@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Regitrtion form</title>
+    <style>
+        label{
+            font-size: 23px;
+        }
+        
+        input:hover{
+            outline: 3px solid rgba(0, 0, 255, 0.5);
+        }
+        input{
+            font-size: 23px;
+            box-shadow: 5px 5px 5px;
+            border-radius: 8px;
+        }
+
+        select{
+            font-size: 21px;
+        }
+        td{
+            font-size: 23px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        .container1{
+            text-align: center;
+            margin-left:5%;
+            margin-right:45%;
+            padding-bottom: 10PX;
+            background-color: rgba(235,234,239,0.9);
+            border-radius: 10px;
+            
+        }
+
+        table{
+            margin: 0% 10%;
+        }
+
+        body {
+            background-image: url("OIP2.png");
+            background-size: cover;
+            /* You can also use other values like "contain", "auto", or specific dimensions */
+          }
+    </style>
+</head>
+<body>
+    
+    <form action="" method="post">
+        <div class="container1">
+        <h1>CANDIDATE ENROLLMENT PORTAL</h1>
+        <h2>Personal Information</h2>
+        <label for="firstName">First Name</label><br>
+        <input type="text" name="firstName" id="firstName" required>
+        <br>
+        <br>
+        <label for="lastName">Last Name</label><br>
+        <input type="text" name="lastName" id="firstName" required>
+        <br>
+        <br>
+        <label for="email">E-mail</label><br>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <br>
+        <label for="phoneNumber">phone number</label><br>
+        <input type="text" name="phoneNumber" id="phoneNumber" required>
+        <br>
+        <br>
+        <label for="birthdate">Date of Birth</label><br>
+        <input type="date" name="birthdate" id="birthdate" required>
+
+        <h2>Employment Information</h2>
+        <label for="position">preferable position</label><br>
+        <select name="position" id="position" required>
+            <option value="">Select Position</option>
+            <option value="React Developer">Web App Developer(React)</option>
+            <option value="Software Engineer">Software Engineer</option>
+        </select>
+        <br>
+        <br>
+        <label for="startdate">Date available to start working</label><br>
+        <input type="date" name="startdate" id="startdate" required>
+        <br>
+        <br>
+        <label for="employmentStatus">Employment status</label><br>
+        <select name="employmentStatus" id="employmentStatus" required>
+            <option value="">Select employment Status</option>
+            <option value="full-time">full-time</option>
+            <option value="part-time">part-time</option>
+            <option value="temporary">temporary</option>
+        </select>
+        <br>
+        <br>
+        <label for="workAuthorization">Are you authorized person to work ?</label><br>
+        <select name="workAuthorization" id="workAuthorization" required>
+            <option value="">Select Authorization</option>
+            <option value="yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    
+        <h2>Eduction Qulifications</h2>
+        <select name="educationQualification" id="educationQualification" required>
+            <option value="">Select Eduction Qulifications</option>
+            <option value="High School">High School</option>
+            <option value="Currently pursuing Degree">Currently pursuing Degree</option>
+            <option value="Bachelor’s Degree">Bachelor’s Degree</option>
+            <option value="Master’s Degree">Master’s Degree</option>
+        </select>
+
+        <select name="field" id="field" required>
+            <option value="">Select Field</option>
+            <option value="Computer science">Computer science</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Machine learning">Machine learning</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <h2>Experience level</h2>
+        <select name="Experience level" id="Experience level" required>
+            <option value="">Select Experience Level</option>
+            <option value="Internship">Internship</option>
+            <option value="Entry level">Entry level</option>
+            <option value="Associate">Associate</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <h2>Language proficiency</h2>
+        <select name="Language proficiency" id="Language proficiency" required>
+            <option value="">Select Proficiency Level</option>
+            <option value="Poor">Poor</option>
+            <option value="Average">Average</option>
+            <option value="Very Good">Very Good</option>
+            <option value="Excellent">Excellent</option>
+        </select>
+        <h2>Preferred work schedule</h2>
+        <p>Everyone should work 20 hours per week as preferable to you</p>
+        <table>
+            <tr>
+                <td>Monday</td>
+                <td><input type="number" name="Monday" id="Monday" required></td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td><input type="number" name="Tuesday" id="Tuesday" required></td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td><input type="number" name="Wednesday" id="Wednesday" required></td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td><input type="number" name="Thursday" id="Thursday" required></td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td><input type="number" name="Friday" id="Friday" required></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <input style="margin-right: 10%;" type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+    </form>
+</body>
+</html>
