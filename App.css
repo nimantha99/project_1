@@ -1,0 +1,15 @@
+h2,p{
+  margin: 0;
+}
+.product-list{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+  width: 50%;
+}
